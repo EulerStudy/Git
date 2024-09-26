@@ -1,0 +1,11 @@
+# 특정 commit 취소하는 법
+> git revert 커밋아이디
+
+# 동시에 여러 개의 커밋아이디 입력 가능
+> git revert 커밋아이디1 커밋아이디2
+
+# 최근 커밋 취소 가능
+> git revert HEAD
+
+# 바로 커밋을 하지 않고 취소되는 변경사항을 스테이징 영역에 추가
+> git revert --no-commit 커밋아이디

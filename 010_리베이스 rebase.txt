@@ -1,0 +1,29 @@
+ rebase
+# 일반 merge는 중심브랜치로 이동해서 머지하는데
+# rebase & merge는 일반 머지와 반대로 새로운 브랜치로 이동해서 머지한다.
+> git checkout feature-b
+
+> git rebase main
+
+> git checkout main
+
+> git merge feature-b 
+
+> git branch -d feature-a 
+
+> git branch -d feature-b 
+
+## service 브랜치에서 파생된 ui 브랜치 rebase 하기
+
+> git rebase --onto main service ui
+
+> git checkout main
+
+> git merge ui
+
+# 기존에 존재하는 히스토리를 변경
+# i는 interactive의 약자
+# 수정하고자 하는 이전 해시코드를 넣어야 함
+> git rebase -i 해시코드
+
+

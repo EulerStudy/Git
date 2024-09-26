@@ -1,0 +1,39 @@
+git diff: 워킹 디렉토리에서 변경된 내용을 보여줌
+최근 commit vs 현재 파일 차이점 보여줌
+
+# <j><k>로 스크롤 가능
+# <q> 종료
+> git diff
+
+# 스테이지에 있는 내용을 확인하고 싶을 때
+> git diff --staged
+
+# --staged와 동일함
+> git diff --cashed
+
+# 좀더 시각적으로 비교, 종료 <:q>
+> git difftool
+
+# 현재의 커밋과 커밋 아이디 비교
+> git difftool 커밋아이디
+
+# 커밋아이디를 2개까지 가능, 그러면 2개의 커밋 비교
+> git difftool 커밋아이디1 커밋아이디2
+
+# difftool 할 때 Vim 에디터 쓰기 싫으면
+> git config --global diff.tool vscode
+> git config --global diff.tool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+
+# 스테이지에 있는 내용 확인
+> git difftool --staged
+
+# extention git graph 설치
+
+# 두 개의 해시코드 비교
+> git diff 해시코드아이디1 해시코드아이디2
+
+# 두 개의 해시코드에서 특정 파일 비교
+> git diff 해시코드아이디1 해시코드아이디2 파일명
+
+# 브랜치1과 브랜치2 사이의 코드를 보여줌
+> git diff 브랜치1..브랜치2

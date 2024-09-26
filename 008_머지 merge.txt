@@ -1,0 +1,22 @@
+# main 브랜치로 이동
+> git checkout main
+
+# main 브랜치와 머지 (fast-forward 머지)
+# 단점: history에 남지 않는다.
+> git merge 브랜치1
+
+# fast-forward 머지 하지 말것
+# 왜냐하면 history에 남기기 위해서
+> git merge --no-ff 브랜치1
+
+# fast-forward 머지가 불가능함년
+# three-way 머지를 한다.
+> git merge 브랜치1
+
+# 머지 취소
+> git merge --abort
+
+
+
+# squash and merge
+> git merge --squash 새브랜치

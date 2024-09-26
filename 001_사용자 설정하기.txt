@@ -1,0 +1,36 @@
+> git --version
+git version 2.45.2.windows.1
+
+> git config --list
+
+# 에디트 환경에서 열어보기
+> git config --list e
+
+# 개행문자 설정
+## windows
+> git config --global core.autocrlf true
+## mac
+> git config --global core.autocrlf input
+
+# 사용자 정보
+## Github id
+> git config --global user.name "euleredu"
+## Github email
+> git config --global user.email 'eulerlab@naver.com'
+
+# 기본 브랜치를 main으로 설정
+> git config --global init.defaultBranch main
+
+# 기본 에디터를 vscode로 설정
+> git config --global core.editor "code --wait"
+
+# 구성확인
+> git config --global --list
+
+> git config user.name
+euleredu
+
+> git config user.email
+eulerlab@naver.com
+
+

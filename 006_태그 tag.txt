@@ -1,0 +1,39 @@
+# 현재 커밋에 태그 달기
+> git tag abc
+
+# 특정 커밋에 태그 달기
+> git tag v1.0.0 해시코드
+
+# 특정 커밋에 태그 달고, 매시지를 더 작성하고자 할 때
+> git gag v1.0.1 해시코드 -am "Release note..."
+
+# 태그에 달린 메시지를 확인하고자 할 때
+> git show v1.0.1
+
+# 리파지토리에 있는 모든 태그를 확인해보고자 할 때
+> git tag
+abc
+v1.0.0
+v1.0.1
+
+> git tag -l "v1.0.*"
+v1.0.0
+v1.0.1
+
+# 태그 삭제
+> git tag -d v1.0.1
+
+# 그 태그로 이동
+> git checkout v1.0.0
+
+# 태그를 체크아웃 하면서 새로운 브랜치를 만들고 싶다면
+> git checkout -b testing v2.0.0
+
+# 내가 만든 태그를 서버에 업로드하고 싶으면
+> git push origin v1.0.0
+
+# 모든 태그들을 push하고 싶으면
+> git push orgin --tags
+
+# 특정 태그를 삭제하고 싶으면
+> git push origin --delete v1.0.0

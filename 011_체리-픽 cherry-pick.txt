@@ -1,0 +1,7 @@
+# main 브랜치 위에 service 브랜치 중간에 특정 하나의 커밋만 main 브랜치에 머지한다.
+# main 브랜치 위헤서
+
+> git checkout main
+
+> git cherry-pick 해시코드
+

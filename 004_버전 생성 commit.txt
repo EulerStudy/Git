@@ -1,0 +1,12 @@
+> git status
+
+> git add .
+
+> git status
+
+> git commit -m '뱃지 이미지 수정'
+
+# add와 함께 커밋해버림
+> git commit -am '메시지'
+
+

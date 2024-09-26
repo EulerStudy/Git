@@ -1,0 +1,24 @@
+> dir
+
+# De까지 치고 <tab>
+> cd Desktop
+
+# 깃 클론
+> git clone 깃헙주소
+
+# 폴더명 안에 git이 클론
+> git clone 깃헙주소 폴더명
+
+#
+> git remote
+
+# <ctrl>+<shift>+<p>
+> code
+
+> cd starbucks
+
+새 창에서 오픈
+> code .
+
+# 현재창에 오픈
+> code . -r

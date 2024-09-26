@@ -1,0 +1,32 @@
+## 삭제하기
+# 특정 커밋을 삭제하기 위해서 
+# 삭제하고자 하는 커밋의 이전 해시코드를 입력
+> git rebase -i HEAD~2
+
+파일 삭제 CONFLICT이 발생하면
+> git add .
+
+> git rebase --continue
+
+
+## 분할하기
+> git rebase -i 해시아이디
+
+# mixed는 생략 가능
+> git reset --mixed HEAD~1
+
+> git add package.json
+
+> git commit -m "메시지1"
+
+> git add abc.txt
+
+> git commit -m "메시지2"
+
+> git rebase --continue
+
+
+## 병합하기
+> git rebase -i 해시아이디
+
+# 최종 커밋은 pick, 병합하고자 하는 커밋은 sqush 선택

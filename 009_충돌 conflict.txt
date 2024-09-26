@@ -1,0 +1,32 @@
+> git pull origin master
+COLFLICT
+
+> git pull origin master
+
+# 머지 충돌을 해결한 후
+# 이것은 fast-forward 머지가 아니다
+> git merge --continue
+
+# merge 기본툴을 vscode로 세팅
+> git config --global -e
+
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED 
+
+# vscode 창이 열림
+> git mergetool
+
+# 머지될 때 생기는 orig 파일이 생기지 않도록 함
+> git config --global mergetool.keepBackup false
+
+> git clean -fd
+
+# p4Merge 사용하기 (구글에서 다운로드)
+> git config --global -e
+
+[mergetool]
+  keepBackup = false
+[mergetool "p4merge"]
+  path = "C://Program FIles/Applications/p4merge.app/Contents/MacOS/p4merge"

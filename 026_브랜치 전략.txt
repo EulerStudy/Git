@@ -1,0 +1,129 @@
+main 기본/메인/제품 브랜치
+
+dev(develop) 다음 제품 출시를 위해 여러 기능을 병합하는 브랜치
+
+feature/* 이번 제품 출시 직전 최종 테스트(QA)를 위한 브랜치
+
+hotfix 제품에 버그가 확인되었을 때 긴급 수정을 위한 브랜치
+
+> git init
+
+> git add .
+
+> git commit -m '프로젝트 생성'
+
+> git branch dev
+
+> git branch feature/add
+
+> git branch --list
+dev
+feature/A 
+* main
+
+> git checkout feature/A 
+
+> git add .
+
+> git commit -m 'A1'
+
+> git checkout dev
+
+> git merge feature/A 
+
+> git checkout feature/A 
+
+> git add .
+
+> git commit -m 'A2'
+
+> git branch feature/B 
+
+> git checkout feature/B 
+
+> git add .
+
+> git commit -m 'B1'
+
+> git add .
+
+> git commot -m 'B2'
+
+> git checkout dev
+
+> git merge feature/B 
+
+> git branch release
+
+> git checkout release
+
+> git add .
+
+> git commot -m '1.0.0'
+
+> git checkout main
+
+> git merge release
+
+> git checkout dev
+
+> git add .
+
+> git commit -m 'd1'
+
+> git checkout feature/A 
+
+> git add .
+
+> git commit -m 'A3'
+
+> git checkout dev
+
+> git merge feature/A
+# Please enter a commit message to explain why this is necessary,
+# especially if it merges an updated into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+:wq
+> git checkout release
+
+> git merge dev
+Merge branch 'dev; into release
+# Please enter a commit message to explain why this is necessary,
+# especially if it merges an updated into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+:wq
+> git add .
+
+> git commit -m '1.1.0'
+
+> git checkout main
+
+> git merse release
+
+> git branch hotfix/lowercase
+
+> git checkout hotfix/lowercase
+
+> git add .
+
+> git commit -m '버그 수정'
+
+> git checkout main
+
+> git merge hotfix/lowercase
+
+> git checkout release
+
+> git merge main
+
+> git add .
+
+> git commit -m '1.1.1'
+
+
+
+

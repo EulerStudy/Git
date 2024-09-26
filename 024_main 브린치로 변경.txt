@@ -1,0 +1,8 @@
+# m은 move
+> git branch -m master main
+
+# 항상 main 브랜치로 교체
+> git config --global init.defaultBranch main
+
+> git init
+

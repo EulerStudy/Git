@@ -1,0 +1,34 @@
+# 해당 파일에 대한 커밋을 볼 수 있다.
+# extention의 git Lens를 설치해서 파일안에서도 blame을 볼 수 있다.
+> git blame 파일명
+
+# 이진탐색으로 잘못된 commit 찾기
+# 작성이 잘 작동된 커밋으로 이동 후
+> git checkout 커밋아이디
+
+> git bisect start
+
+> git bisect good
+
+> git checkout main
+
+> git bisect bad
+
+> git bisect good
+
+> git bisect good
+
+> git bisect bad
+
+> git bisect good
+
+# 나쁜 커밋을 찾았고, 원래의 브랜치로 돌아감
+> git bisect reset
+
+# UI를 사용하고 싶다면 tig를 설치해서 사용하면 된다
+# tig를 구글에서 찾아서 설치한 후
+> tig
+
+
+
+

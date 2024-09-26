@@ -1,0 +1,100 @@
+특정한 커밋으로 모든 것을 초기화
+
+//// 코딩애플
+
+# 과거로 모든걸 되돌리기
+> git reset --hard 커밋아이디
+
+# 리셋인데 변동사항 지우지 말고 스테이징해놓기
+> git reset --soft 커밋아이디
+
+# 리셋인데 변동사항 지우지 말고 unstage 해놓기
+> git reset --mixed 커밋아이디
+
+//// 드림코딩
+# 앞에 있던 두 개의 커밋 없애고, HEAD 옮기기
+# 하지만 작업하고 있던 내용들은 워킹디렉토리에 남아있다.
+# --mixed와 같은 내용
+> git reset HEAD~2
+
+# 스테이징 영역으로 초기화
+> git reset --soft HEAD~1
+
+# 로컬에도 가져오지 말고 커밋에서도 지워주고 완전히 삭제해줘
+> git reset --hard HEAD~1
+
+//// 예제
+> git init
+
+> git status
+
+> git add .
+
+> git status
+
+> git commit -m '1'
+
+> git log
+
+> git status
+
+> git add .
+
+> git status
+
+> git commit -m '2'
+
+> git log
+
+> git status
+
+> git commit -m '3'
+
+> git log
+
+
+> git checkout 커밋아이디
+
+# 마스터 브랜치의 첫번째로 옴
+> git checkout master
+
+> git log
+
+> git log
+
+# 2개 전으로 되돌림
+> git reset --hard HEAD~2
+
+> git reset --hard ORIG_HEAD
+
+> git branch purple
+
+> git branch
+*master
+purple
+
+> git checkout purple
+
+> git status
+
+> git add .
+
+> git status
+
+> git commit -m 'purple/1'
+
+> git checkout master
+
+> git add .
+
+> git commit -m '4'
+
+> git log
+
+> git remote origin '깃헙주소'
+
+> git push origin master
+
+> git checkout purple
+
+> git push origin purple

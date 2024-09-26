@@ -1,0 +1,37 @@
+/// 코딩 애플
+# 파일 복구, 특정 파일을 최근 커밋 상태로 되돌림
+> git restore 파일명
+
+# 특정 commit 시점으로 파일 복구
+> git restore --source 커밋아이디 파일명
+
+# 특정 파일 스테이징 취소
+> git restore --staged 파일명
+
+# 파일 초기화
+> git restore 파일명
+
+//// 드림코딩
+
+# 워킹디렉토리 초기화
+> git restore .
+
+# 스테이지에 있는 파일을 워킹디렉토리로 가져가기
+> git restore --stage 파일명
+
+# 스테이지에 있는 모든 파일을 워킹디텍토리로 가져가기
+> git reset HEAD .
+
+> git show 해시아이디
+pament.txt가 여기서 생성됨을 확인함
+
+# pament.txt가 생성되기 전으로 돌리면 payment.txt가 삭제될 것임
+> git resore --source=HEAD~2 payment.txt
+
+//// 작업 내용 초기화
+
+> git restore .
+
+# 새로 추가된 파일은 restore로 지워지지 않기 때문에
+# git clean force directory
+> git clean -fd

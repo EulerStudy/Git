@@ -1,0 +1,4 @@
+# 포토샵 history처럼 모든 로그가 남아있다.
+> git reflog
+
+> git reset --hard 해시코드

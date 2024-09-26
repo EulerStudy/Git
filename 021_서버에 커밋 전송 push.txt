@@ -1,0 +1,8 @@
+> git commit -m "Add new file"
+
+> git push
+# 서버의 변경사항과 내 로컬의 사항이 맞지 않아서 거절되면
+! [rejected]
+error: failed to push some refs to '깃헙주소'
+# 로컬 우선으로 푸시한다. 서버 내용 삭제
+> git push -f

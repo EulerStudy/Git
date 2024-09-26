@@ -1,0 +1,27 @@
+> git init
+
+> git add .
+
+> git commit -m '프로젝트 생성'
+
+> git remote add origin 깃헙주소
+
+> git push origin main
+
+////
+
+.gitignore 파일을 만듦
+.idea
+.vscode
+.DS_Store
+node_modules
+
+# rm remove의 약자
+> git rm -r --cached .
+
+> git add .
+
+> git commit -m '.gitignore 규칙 추가'
+
+> git push origin main
+

@@ -1,0 +1,37 @@
+> git init
+
+# 깃 삭제
+> rm -rf .git
+
+# 현재 파일의 상태를 확인
+> git status
+
+# 현재 파일의 상태를 축약해서 보여줌
+> git status -s
+
+# status를 st로 alias하기
+> git config --global alias.st staus
+
+# 스테이지에 올림
+> git add .
+
+# .gitignore에 있는 파일들도 스테이지에 올림
+> git add *
+
+# 스테이징에서 워킹 디렉토리로 옮김
+> git rm --cached .
+
+# 버전 생성
+> git commit -m 'start project'
+
+# <q>키를 눌러서 종료
+> git log
+
+> git remote add origin 깃헙주소
+
+> git push origin master
+
+# 옵션으로 -u를 붙이면 주소를 기억하고 있기 때문에 나중에 git push만 해도 된다.
+> git push -u origin master
+
+> git push
